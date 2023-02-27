@@ -7,9 +7,9 @@ var number = text.split`@`[1]
 var number = text
 }
 	
-if(!text && !m.quoted) return conn.reply(m.chat, `*USO APROPIADO*\n\n📌 *_Ejemplo :_*
-${usedPrefix}daradmin *@tag*\n${usedPrefix}promote *responder a un mensaje*`, m)
-if(number.length > 13 || (number.length < 11 && number.length > 0)) return conn.reply(m.chat, `⚠️ *_El número ingresado es incorrecto, por favor ingrese el número correctamente_*`, m)
+if(!text && !m.quoted) return conn.reply(m.chat, `*OH MA LO VUOI USARE BENE?*\n\n📌 *TESTA DI CAZZO COSI:_*
+${usedPrefix}daradmin *@tag*\n${usedPrefix}promote *rispondi ad un msg*`, m)
+if(number.length > 13 || (number.length < 11 && number.length > 0)) return conn.reply(m.chat, `⚠️ *_Il numero del fra, è sbagliato_*`, m)
 	
 try {
 if(text) {
@@ -22,11 +22,11 @@ var user = number + '@s.whatsapp.net'
 } catch (e) {
 } finally {
 conn.groupParticipantsUpdate(m.chat, [user], 'promote')
-conn.reply(m.chat, `✅ *_Ordenes realizadas._*`, m)
+conn.reply(m.chat, `✅ *_Confermato._*`, m)
 }}
 handler.help = ['daradmin', 'promote']
 handler.tags = ['group']
-handler.command = /^(promote|daradmin|darpoder)$/i
+handler.command = /^(promote|potere|darpoder)$/i
 handler.group = true
 handler.admin = true
 handler.botAdmin = true
