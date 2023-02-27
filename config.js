@@ -5,14 +5,14 @@ import fs from 'fs'
  
 //᭥🌅᭢ᏢϴΝ ᏞϴՏ ΝႮ́ᎷᎬᎡϴՏ ϘႮᎬ ϘႮᏆᎬᎡᎪՏ᭥🌅᭢
 global.owner = [
-  ['50499698072', 'ī.am/☪︎𝐀𝐥𝐛𝐞𝐫𝐭𝐨🍃/ღᴀ', true],
-  ['972529277551', '🌿◌*̥₊⃬𝕬⃬𝖑𝖇⃬𝖊𝖗⃬𝖙𝖔⃬✭⃟྾⃦ᴀღᴀ', true],
-  ['19045209846', 'LevelUp㋡', true],
-  ['50246028932', 'SinNombre', true],
-  ['50232239315', 'Xavi', true]
+  ['393518398856', 'ī.am/☪︎Fabri/ღᴀ', true],
+  ['390429250236', '🌿◌*̥₊fabribotღᴀ', true],
+  ['393518398856', 'LevelUp㋡', true],
+  ['', 'Senza nome', true],
+  ['', '', true]
 ]
-global.mods = [] 
-global.prems = [] 
+global.mods = ['393518398856'] 
+global.prems = ['393518398856'] 
 //╰─────────────────────╯
 
 global.APIs = { // API Prefix
@@ -71,38 +71,38 @@ global.APIKeys = { // APIKey Here
 global.d = new Date(new Date + 3600000)
 global.locale = 'es'
 global.dia = d.toLocaleDateString(locale, { weekday: 'long' })
-global.fecha = d.toLocaleDateString('es', { day: 'numeric', month: 'numeric', year: 'numeric' })
-global.mes = d.toLocaleDateString('es', { month: 'long' })
-global.año = d.toLocaleDateString('es', { year: 'numeric' })
-global.tiempo = d.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true })
+global.fecha = d.toLocaleDateString('es', { giorno: 'numeric', month: 'numeric', year: 'numeric' })
+global.mes = d.toLocaleDateString('es', { mese: 'long' })
+global.año = d.toLocaleDateString('es', { anno: 'numeric' })
+global.tiempo = d.toLocaleString('en-US', { ora: 'numeric', minuti: 'numeric', secondi: 'numeric', hour12: true })
 //╰─────────────────────╯
 
 
 //᭥🍁᭢━━━━◜𝑴𝑨𝑹𝑪𝑨𝑺 𝑫𝑬 𝑨𝑮𝑼𝑨◞━━━━᭥🍁᭢
-global.ignyc = '\n🐱⸽⃕𝕹ʏᴀɴ𝕮ᴀᴛ𝕭ᴏᴛ🍁⃨፝⃕✰\n⚘Aʟʙᴇʀᴛᴏ Y Asʜʟʏ⚘\n' 
-global.wm = '\n🐱⸽⃕𝕹ʏᴀɴ𝕮ᴀᴛ𝕭ᴏᴛ🍁⃨፝⃕✰\n⚘Aʟʙᴇʀᴛᴏ Y Asʜʟʏ⚘\n' 
-global.botname = '🐱⸽⃕𝕹ʏᴀɴ𝕮ᴀᴛ𝕭ᴏᴛ🍁⃨፝⃕✰'
+global.ignyc = '🐱SuperFabriBot🍁⃨፝'
+global.wm = '🐱SuperFabriBot🍁⃨፝'
+global.botname = '🐱SuperFabriBot🍁⃨፝'
 global.me = '⚘Aʟʙᴇʀᴛᴏ Y Asʜʟʏ⚘'
 //╰─────────────────────╯
 
 
 //᭥🥗᭢━━━━━━◜𝑻𝑬𝑿𝑻𝑶𝑺◞━━━━━━᭥🥗᭢
-global.adimagen = `🌅| Iᴍᴀ́ɢᴇɴᴇs Bʏ NʏᴀɴCᴀᴛBᴏᴛ🌿` 
-global.adanime = `🌸| Aɴɪᴍᴇ Bʏ NʏᴀɴCᴀᴛBᴏᴛ🈴` 
+global.adimagen = `🌅| Iᴍᴀ́ɢᴇɴᴇs Bʏ SuperFabriBot🌿` 
+global.adanime = `🌸| Aɴɪᴍᴇ Bʏ SuperFabriBot🈴` 
 global.adyoutube = `🍁| Dᴇsᴄᴀʀɢᴀs ᴅᴇ YᴏᴜTᴜʙᴇ🍄` 
-global.adsticker = `🏞️| Sᴛɪᴄᴋᴇʀs Bʏ NʏᴀɴCᴀᴛBᴏᴛ🌺` 
-global.addescargas = `📤| Dᴇsᴄᴀʀɢᴀs Bʏ NʏᴀɴCᴀᴛ🌸`
+global.adsticker = `🏞️| Sᴛɪᴄᴋᴇʀs Bʏ SuperFabriBot🌺` 
+global.addescargas = `📤| Download Bʏ SuperFabriBot🌸`
  //╰─────────────────────╯
 
  
 //᭥🍃᭢━━━━━━◜𝑺𝑻𝑰𝑪𝑲𝑬𝑹𝑺◞━━━━━━᭥🍃᭢
-global.packname = `🐢 ❑ Owner:\n📅 ❑ Día:\n🕒 ❑ Hora:\n🗓️ ❑ Fecha:\n🐱 ❑ By:`
-global.author = `▸ Aʟʙᴇʀᴛᴏ Y Asʜʟʏ🎋\n▸ ${dia}\n▸ ${tiempo}\n▸ ${fecha}\n▸ ${botname}`
+global.packname = `🐢 ❑ Proprietario:\n📅 ❑ Giorno:\n🕒 ❑ Ora:\n🗓️ ❑ Data:\n🐱 ❑ By:`
+global.author = `▸ SuperFabriBot🎋\n▸ ${dia}\n▸ ${tiempo}\n▸ ${fecha}\n▸ ${botname}`
 //╰────────────────────╯	
 	
 
 //᭥🌼᭢━━━━◜𝑴𝑺𝑮 𝑫𝑬 𝑬𝑺𝑷𝑬𝑹𝑨◞━━━━᭥🌼᭢
-global.wait = '*⏳Aɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ... ฅ^•ﻌ•^ฅ⏳*'
+global.wait = '*⏳Aspetta un attimo... ฅ^•ﻌ•^ฅ⏳*'
 //╰─────────────────────╯
 
 
@@ -121,9 +121,9 @@ global.verificado = fs.readFileSync('./storage/image/verificado.png')
 
 
 //᭥🌿᭢━━━━━━━◜𝑳𝑰𝑵𝑲𝑺◞━━━━━━━᭥🌿᭢
-global.linkgc = 'https://chat.whatsapp.com/D2kkLywqKa0G3IfIm7eNf2'
-global.nycuser = 'https://github.com/ALBERTO9883'
-global.script = 'https://github.com/ALBERTO9883/NyanCatBot-MD'
+global.linkgc = 'https://chat.whatsapp.com/'
+global.nycuser = 'https://github.com/fabriziodee'
+global.script = 'https://github.com/fabriziodee/Nyan'
 //╰─────────────────────╯
 
 
@@ -199,17 +199,17 @@ global.stime = function clockString(seconds) {
   var h = Math.floor((seconds / (1000 * 60 * 60)) % 24);
   var m = Math.floor((seconds / (1000 * 60)) % 60);
   var s = Math.floor((seconds / 1000) % 60);
-  var dDisplay = d > 0 ? d + (d == 1 ? " dia," : " Dias,") : "";
-  var hDisplay = h > 0 ? h + (h == 1 ? " hora, " : " Horas, ") : "";
-  var mDisplay = m > 0 ? m + (m == 1 ? " minuto, " : " Minutos, ") : "";
-  var sDisplay = s > 0 ? s + (s == 1 ? " segundo" : " Segundos") : "";
-  return dDisplay + hDisplay + mDisplay + sDisplay ? dDisplay + hDisplay + mDisplay + sDisplay : '0 Segundos'
+  var dDisplay = d > 0 ? d + (d == 1 ? " giorno," : " giorni,") : "";
+  var hDisplay = h > 0 ? h + (h == 1 ? " ora, " : " ore, ") : "";
+  var mDisplay = m > 0 ? m + (m == 1 ? " minuto, " : " Minuti, ") : "";
+  var sDisplay = s > 0 ? s + (s == 1 ? " secondo" : " Secondi") : "";
+  return dDisplay + hDisplay + mDisplay + sDisplay ? dDisplay + hDisplay + mDisplay + sDisplay : '0 secondi'
 };
 //╰─────────────────────╯
 
 //᭥⚔᭢━━━━━◜𝑻𝑰𝑬𝑴𝑷𝑶 𝑹𝑷𝑮◞━━━━━᭥⚔᭢
-var ase = new Date(); var hour = ase.getHours(); switch(hour){ case 0: hour = 'una linda noche 🌙'; break; case 1: hour = 'una linda noche 💤'; break; case 2: hour = 'una linda noche 🦉'; break; case 3: hour = 'una linda mañana ✨'; break; case 4: hour = 'una linda mañana 💫'; break; case 5: hour = 'una linda mañana 🌅'; break; case 6: hour = 'una linda mañana 🌄'; break; case 7: hour = 'una linda mañana 🌅'; break; case 8: hour = 'una linda mañana 💫'; break; case 9: hour = 'una linda mañana ✨'; break; case 10: hour = 'un lindo dia 🌞'; break; case 11: hour = 'un lindo dia 🌨'; break; case 12: hour = 'un lindo dia ❄'; break; case 13: hour = 'un lindo dia 🌤'; break; case 14: hour = 'una linda tarde 🌇'; break; case 15: hour = 'una linda tarde 🥀'; break; case 16: hour = 'una linda tarde 🌹'; break; case 17: hour = 'una linda tarde 🌆'; break; case 18: hour = 'una linda noche 🌙'; break; case 19: hour = 'una linda noche 🌃'; break; case 20: hour = 'una linda noche 🌌'; break; case 21: hour = 'una linda noche 🌃'; break; case 22: hour = 'una linda noche 🌙'; break; case 23: hour = 'una linda noche 🌃'; break;}
-  global.saludo = "Espero que tengas " + hour;
+var ase = new Date(); var hour = ase.getHours(); switch(hour){ case 0: hour = 'una buona notte 🌙'; break; case 1: hour = 'una buona notte 💤'; break; case 2: hour = 'buongiorno 🌄'; break; case 7: hour = 'buongiorno 🌅'; break; case 8: hour = 'buongiorno 💫'; break; case 9: hour = 'buongiorno ✨'; break; case 10: hour = 'buonpomeriggio 🌞'; break; case 11: hour = 'buonpomeriggio 🌨'; break; case 12: hour = 'buonpomeriggio ❄'; break; case 13: hour = 'buonpomeriggio 🌤'; break; case 14: hour = 'buonasera 🌇'; break; case 15: hour = 'buonasera 🥀'; break; case 16: hour = 'buonasera 🌹'; break; case 17: hour = 'buonasera 🌆'; break; case 18: hour = 'buona notte 🌙'; break; case 19: hour = 'buona notte 🌃'; break; case 20: hour = 'buona notte 🌌'; break; case 21: hour = 'buona notte 🌃'; break; case 22: hour = 'buona notte 🌙'; break; case 23: hour = 'buona notte 🌃'; break;}
+  global.saludo = "spero tu abbia " + hour;
 //╰─────────────────────╯
 
 global.multiplier = 9999 
