@@ -45,7 +45,7 @@ let audio8B = audio8A.exec(m.text)
 let audio9A = /dissgacha/i
 let audio9B = audio9A.exec(m.text)
 
-let audio10A = /dissgacha/i
+let audio10A = /gacha/i
 let audio10B = audio10A.exec(m.text)
 //━━━━━━━━━━━━━━━━━━━━━━━
 
