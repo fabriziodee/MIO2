@@ -21,6 +21,9 @@ if (chat.chatbot) {
 let audio1A = /mujer|Mujer|wom|Wom/i
 let audio1B = audio1A.exec(m.text)
 
+let audio5A = /kit|kitsune/i
+let audio5B = audio5A.exec(m.text)
+
 let audio2A = /Hello|hello/i
 let audio2B = audio2A.exec(m.text)
 
@@ -39,6 +42,13 @@ if (audio1B) {
 	conn.sendMessage(m.chat, { audio: { url: vn }, contextInfo: { "externalAdReply": { "title": botname, "body": `=> ᴀᴜᴅɪᴏ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴏ`, "previewType": "PHOTO", "thumbnailUrl": null,"thumbnail": imgmenu, "sourceUrl": `https://github.com/BrunoSobrino/TheMystic-Bot-MD`, "showAdAttribution": true}}, seconds: '4556', ptt: true, mimetype: 'audio/mpeg', fileName: `error.mp3` }, { quoted: m })
 
 	} else
+		
+if (audio5B) {
+	let vn = './storage/mp3/kitsune.mp3'
+	await conn.sendPresenceUpdate('recording', m.chat)
+	conn.sendMessage(m.chat, { audio: { url: vn }, contextInfo: { "externalAdReply": { "title": botname, "body": `=> ᴀᴜᴅɪᴏ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴏ`, "previewType": "PHOTO", "thumbnailUrl": null,"thumbnail": imgmenu, "sourceUrl": `https://github.com/BrunoSobrino/TheMystic-Bot-MD`, "showAdAttribution": true}}, seconds: '4556', ptt: true, mimetype: 'audio/mpeg', fileName: `error.mp3` }, { quoted: m })
+
+	} else
        
 if (audio2B) {
 	let vn = './storage/mp3/hola.mp3'
@@ -46,13 +56,13 @@ if (audio2B) {
 	conn.sendFile(m.chat, vn, 'hola.mp3', null, m, true, { type: 'audioMessage', ptt: true })
 	} else
 	
-	if (audio3B) {
+if (audio3B) {
 	let vn = './storage/mp3/vladimir.mp3'
 	await conn.sendPresenceUpdate('recording', m.chat)
 	conn.sendFile(m.chat, vn, 'vladimir.mp3', null, m, true, { type: 'audioMessage', ptt: true })
 	} else
 	
-	if (audio4B) {
+if (audio4B) {
 	let vn = './storage/mp3/vladimir.mp3'
 	await conn.sendPresenceUpdate('recording', m.chat)
 	conn.sendFile(m.chat, vn, 'vladimir.mp3', null, m, true, { type: 'audioMessage', ptt: true })
