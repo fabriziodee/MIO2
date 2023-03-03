@@ -38,6 +38,15 @@ let audio6B = audio6A.exec(m.text)
 
 let audio7A = /germanomosconi/i
 let audio7B = audio7A.exec(m.text)
+
+let audio8A = /happyhippo/i
+let audio8B = audio8A.exec(m.text)
+
+let audio9A = /dissgacha/i
+let audio9B = audio9A.exec(m.text)
+
+let audio10A = /dissgacha/i
+let audio10B = audio10A.exec(m.text)
 //━━━━━━━━━━━━━━━━━━━━━━━
 
 
@@ -65,6 +74,27 @@ if (audio6B) {
 		
 if (audio7B) {
 	let vn = './storage/mp3/Mosconi - Ma che oooh (COMPLETO).mp3'
+	await conn.sendPresenceUpdate('recording', m.chat)
+	conn.sendMessage(m.chat, { audio: { url: vn }, contextInfo: { "externalAdReply": { "title": botname, "body": `=> ᴀᴜᴅɪᴏ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴏ`, "previewType": "PHOTO", "thumbnailUrl": null,"thumbnail": imgmenu, "sourceUrl": `pornuhub`, "showAdAttribution": true}}, seconds: '4556', ptt: true, mimetype: 'audio/mpeg', fileName: `error.mp3` }, { quoted: m })
+
+	} else
+		
+if (audio8B) {
+	let vn = './storage/mp3/HAPPY HIPPO FREESTYLE.mp3'
+	await conn.sendPresenceUpdate('recording', m.chat)
+	conn.sendMessage(m.chat, { audio: { url: vn }, contextInfo: { "externalAdReply": { "title": botname, "body": `=> ᴀᴜᴅɪᴏ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴏ`, "previewType": "PHOTO", "thumbnailUrl": null,"thumbnail": imgmenu, "sourceUrl": `pornuhub`, "showAdAttribution": true}}, seconds: '4556', ptt: true, mimetype: 'audio/mpeg', fileName: `error.mp3` }, { quoted: m })
+
+	} else
+		
+if (audio9B) {
+	let vn = './storage/mp3/Diss Gacha - MH AH AH - prod. Sala.mp3'
+	await conn.sendPresenceUpdate('recording', m.chat)
+	conn.sendMessage(m.chat, { audio: { url: vn }, contextInfo: { "externalAdReply": { "title": botname, "body": `=> ᴀᴜᴅɪᴏ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴏ`, "previewType": "PHOTO", "thumbnailUrl": null,"thumbnail": imgmenu, "sourceUrl": `pornuhub`, "showAdAttribution": true}}, seconds: '4556', ptt: true, mimetype: 'audio/mpeg', fileName: `error.mp3` }, { quoted: m })
+
+	} else
+		
+if (audio10B) {
+	let vn = './storage/mp3/Diss Gacha - BALLAS RMX ft MamboLosco, Janga ODT - prod. Sala.mp3'
 	await conn.sendPresenceUpdate('recording', m.chat)
 	conn.sendMessage(m.chat, { audio: { url: vn }, contextInfo: { "externalAdReply": { "title": botname, "body": `=> ᴀᴜᴅɪᴏ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴏ`, "previewType": "PHOTO", "thumbnailUrl": null,"thumbnail": imgmenu, "sourceUrl": `pornuhub`, "showAdAttribution": true}}, seconds: '4556', ptt: true, mimetype: 'audio/mpeg', fileName: `error.mp3` }, { quoted: m })
 
