@@ -35,6 +35,9 @@ let audio4B = audio4A.exec(m.text)
 
 let audio6A = /porco/i
 let audio6B = audio6A.exec(m.text)
+
+let audio7A = /germanomosconi/i
+let audio7B = audio7A.exec(m.text)
 //━━━━━━━━━━━━━━━━━━━━━━━
 
 
@@ -55,6 +58,13 @@ if (audio5B) {
 		
 if (audio6B) {
 	let vn = './storage/mp3/Germano Mosconi - Porco dio.mp3'
+	await conn.sendPresenceUpdate('recording', m.chat)
+	conn.sendMessage(m.chat, { audio: { url: vn }, contextInfo: { "externalAdReply": { "title": botname, "body": `=> ᴀᴜᴅɪᴏ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴏ`, "previewType": "PHOTO", "thumbnailUrl": null,"thumbnail": imgmenu, "sourceUrl": `pornuhub`, "showAdAttribution": true}}, seconds: '4556', ptt: true, mimetype: 'audio/mpeg', fileName: `error.mp3` }, { quoted: m })
+
+	} else
+		
+if (audio7B) {
+	let vn = './storage/mp3/Mosconi - Ma che oooh (COMPLETO).mp3'
 	await conn.sendPresenceUpdate('recording', m.chat)
 	conn.sendMessage(m.chat, { audio: { url: vn }, contextInfo: { "externalAdReply": { "title": botname, "body": `=> ᴀᴜᴅɪᴏ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴏ`, "previewType": "PHOTO", "thumbnailUrl": null,"thumbnail": imgmenu, "sourceUrl": `pornuhub`, "showAdAttribution": true}}, seconds: '4556', ptt: true, mimetype: 'audio/mpeg', fileName: `error.mp3` }, { quoted: m })
 
