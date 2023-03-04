@@ -108,7 +108,7 @@ if (audio2B) {
         } else
 	
 if (audio3B) {
-	let vn = './storage/mp3/achizitta.mp3'
+	let vn = './storage/mp3/achizitta2.mp3'
 	await conn.sendPresenceUpdate('recording', m.chat)
 	conn.sendMessage(m.chat, { audio: { url: vn }, contextInfo: { "externalAdReply": { "title": botname, "body": `=> ᴀᴜᴅɪᴏ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴏ`, "previewType": "PHOTO", "thumbnailUrl": null,"thumbnail": imgmenu, "sourceUrl": `pornuhub`, "showAdAttribution": true}}, seconds: '6', ptt: true, mimetype: 'audio/mpeg', fileName: `error.mp3` }, { quoted: m })
 	} else
