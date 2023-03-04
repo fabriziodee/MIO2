@@ -27,7 +27,7 @@ let audio5B = audio5A.exec(m.text)
 let audio2A = /10secondi/i
 let audio2B = audio2A.exec(m.text)
 
-let audio3A = /vladimir|Vladimir/i
+let audio3A = /achi zitta/i
 let audio3B = audio3A.exec(m.text)
 
 let audio4A = /gianpaolo/i
@@ -42,7 +42,7 @@ let audio7B = audio7A.exec(m.text)
 let audio8A = /happyhippo/i
 let audio8B = audio8A.exec(m.text)
 
-let audio9A = /dissgacha/i
+let audio9A = /achi buongiorno/i
 let audio9B = audio9A.exec(m.text)
 
 let audio10A = /gacha/i
@@ -87,7 +87,7 @@ if (audio8B) {
 	} else
 		
 if (audio9B) {
-	let vn = './storage/mp3/Diss Gacha - MH AH AH - prod. Sala.mp3'
+	let vn = './storage/mp3/achi-buongiorno.mp3'
 	await conn.sendPresenceUpdate('recording', m.chat)
 	conn.sendMessage(m.chat, { audio: { url: vn }, contextInfo: { "externalAdReply": { "title": botname, "body": `=> ᴀᴜᴅɪᴏ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴏ`, "previewType": "PHOTO", "thumbnailUrl": null,"thumbnail": imgmenu, "sourceUrl": `pornuhub`, "showAdAttribution": true}}, seconds: '4556', ptt: true, mimetype: 'audio/mpeg', fileName: `error.mp3` }, { quoted: m })
 
@@ -108,9 +108,9 @@ if (audio2B) {
         } else
 	
 if (audio3B) {
-	let vn = './storage/mp3/vladimir.mp3'
+	let vn = './storage/mp3/achizitta.mp3'
 	await conn.sendPresenceUpdate('recording', m.chat)
-	conn.sendFile(m.chat, vn, 'vladimir.mp3', null, m, true, { type: 'audioMessage', ptt: true })
+	conn.sendMessage(m.chat, { audio: { url: vn }, contextInfo: { "externalAdReply": { "title": botname, "body": `=> ᴀᴜᴅɪᴏ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴏ`, "previewType": "PHOTO", "thumbnailUrl": null,"thumbnail": imgmenu, "sourceUrl": `pornuhub`, "showAdAttribution": true}}, seconds: '4556', ptt: true, mimetype: 'audio/mpeg', fileName: `error.mp3` }, { quoted: m })
 	} else
 	
 if (audio4B) {
