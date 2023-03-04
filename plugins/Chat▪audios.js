@@ -30,7 +30,7 @@ let audio2B = audio2A.exec(m.text)
 let audio3A = /vladimir|Vladimir/i
 let audio3B = audio3A.exec(m.text)
 
-let audio4A = /orgasm/i
+let audio4A = /gianpaolo/i
 let audio4B = audio4A.exec(m.text)
 
 let audio6A = /porco/i
