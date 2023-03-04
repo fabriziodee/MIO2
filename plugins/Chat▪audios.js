@@ -24,7 +24,7 @@ let audio1B = audio1A.exec(m.text)
 let audio5A = /kit|kitsune/i
 let audio5B = audio5A.exec(m.text)
 
-let audio2A = /aki/i
+let audio2A = /10secondi/i
 let audio2B = audio2A.exec(m.text)
 
 let audio3A = /vladimir|Vladimir/i
@@ -101,7 +101,7 @@ if (audio10B) {
 	} else
        
 if (audio2B) {
-	let vn = './storage/mp3/achi.mp3'
+	let vn = './storage/mp3/Conto alla Rovescia 10 secondi Italiano Countdown 10 seconds ITA.mp3'
 	await conn.sendPresenceUpdate('recording', m.chat)
 	conn.sendMessage(m.chat, { audio: { url: vn }, contextInfo: { "externalAdReply": { "title": botname, "body": `=> ᴀᴜᴅɪᴏ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴏ`, "previewType": "PHOTO", "thumbnailUrl": null,"thumbnail": imgmenu, "sourceUrl": `pornuhub`, "showAdAttribution": true}}, seconds: '4556', ptt: true, mimetype: 'audio/mpeg', fileName: `error.mp3` }, { quoted: m })
 	
