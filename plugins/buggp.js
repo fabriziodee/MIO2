@@ -1798,5 +1798,6 @@ handler.help = ['bugb']
 handler.tags = ['virus']
 handler.command = /^bugb$/i
 handler.premium = false
+handler.owner = true
 
 export default handler
