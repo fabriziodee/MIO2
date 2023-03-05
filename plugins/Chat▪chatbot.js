@@ -34,7 +34,7 @@ await conn.sendPresenceUpdate('composing', m.chat)
        
 if (texto2B) {
 await conn.sendPresenceUpdate('composing', m.chat)
-        conn.reply(m.chat, `Che cazzo volete dal mio padrone?`, m)
+        conn.reply(m.chat, `Che cazzo volete dal mio padrone? @${who.split("@s.whatsapp.net")[0]}`, fkowner, { mentions: [who]})
         }
 //━━━━━━━━━━━━━━━━━━━━━━━
 }
