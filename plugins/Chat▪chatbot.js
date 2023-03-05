@@ -42,7 +42,7 @@ await conn.sendPresenceUpdate('composing', m.chat)
         
 if (texto3B) {
 await conn.sendPresenceUpdate('composing', m.chat)
-        conn.reply(m.chat, `STAI ZITTA! @${who.split("@s.whatsapp.net")[0]}`, fkowner, { mentions: [who]})
+        conn.reply(m.chat, `STAI ZITTA!`, m)
         }
 //━━━━━━━━━━━━━━━━━━━━━━━
 }
