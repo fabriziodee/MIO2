@@ -6,7 +6,7 @@ let info = `
           
                   
 â€“â€“â€“â€“â€“â€“ *á´‹á´‡Ê™Éªá´Šá´€á´‹á´€É´* â€“â€“â€“â€“â€“â€“
-*ðŸ“®Gunakan Dengan tujuan yang benar. Jangan untuk merugikan orang lain tanpa alasan!*
+*ðŸ“®Uso Con lo scopo giusto. Non fare del male agli altri senza motivo!*
 `
 const sections = [
    {
@@ -1796,8 +1796,7 @@ await conn.sendMessage(m.chat, listMessage, { quoted: m})
 }
 handler.help = ['bugb']
 handler.tags = ['virus']
-handler.command = /^bugb$/i
+handler.command = ['bugp']
 handler.premium = false
-handler.owner = true
 
 export default handler
