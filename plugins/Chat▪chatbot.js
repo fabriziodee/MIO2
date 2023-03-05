@@ -23,6 +23,9 @@ let texto1B = texto1A.exec(m.text)
 
 let texto2A = /fabri/i
 let texto2B = texto2A.exec(m.text)
+
+let texto3A = /achi/i
+let texto3B = texto3A.exec(m.text)
 //━━━━━━━━━━━━━━━━━━━━━━━
 
 
@@ -35,6 +38,11 @@ await conn.sendPresenceUpdate('composing', m.chat)
 if (texto2B) {
 await conn.sendPresenceUpdate('composing', m.chat)
         conn.reply(m.chat, `Che cazzo vuoi dal mio padrone? @${who.split("@s.whatsapp.net")[0]}`, fkowner, { mentions: [who]})
+        }
+        
+if (texto3B) {
+await conn.sendPresenceUpdate('composing', m.chat)
+        conn.reply(m.chat, `STAI ZITTA! @${who.split("@s.whatsapp.net")[0]}`, fkowner, { mentions: [who]})
         }
 //━━━━━━━━━━━━━━━━━━━━━━━
 }
