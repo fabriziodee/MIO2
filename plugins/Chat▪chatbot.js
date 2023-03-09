@@ -51,7 +51,7 @@ await conn.sendPresenceUpdate('composing', m.chat)
         
 if (texto3B) {
 await conn.sendPresenceUpdate('composing', m.chat)
-        conn.reply(m.chat, `STAI ZITTA!`, m)
+        conn.reply(m.chat, `ti amo`, m)
         }
         
         if (texto4B) {
