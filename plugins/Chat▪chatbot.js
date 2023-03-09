@@ -26,6 +26,12 @@ let texto2B = texto2A.exec(m.text)
 
 let texto3A = /achi/i
 let texto3B = texto3A.exec(m.text)
+
+let texto4A = /dani/i
+let texto4B = texto4A.exec(m.text)
+
+let texto5A = /kit/i
+let texto5B = texto5A.exec(m.text)
 //━━━━━━━━━━━━━━━━━━━━━━━
 
 
@@ -43,6 +49,16 @@ await conn.sendPresenceUpdate('composing', m.chat)
 if (texto3B) {
 await conn.sendPresenceUpdate('composing', m.chat)
         conn.reply(m.chat, `STAI ZITTA!`, m)
+        }
+        
+        if (texto4B) {
+await conn.sendPresenceUpdate('composing', m.chat)
+        conn.reply(m.chat, `Cazzo ma hai visto quanto è potente?`, m)
+        }
+        
+         if (texto5B) {
+await conn.sendPresenceUpdate('composing', m.chat)
+        conn.reply(m.chat, `Aaaah ma stai parlando a kit, inchinati!`, m)
         }
 //━━━━━━━━━━━━━━━━━━━━━━━
 }
